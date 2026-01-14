@@ -5,18 +5,19 @@ print("Welcome to my guessing game about cars")
 print ("this is the list of cars you can use") 
 cars=["hellcat","trackhawk","skylineGTR","Honda civic","G Wagon","Corvette C6", "BMW I8"]
 print(cars)
-#users question
-userCar=input("choose a car of your choice")
-userQ=input("create a question for your car")
-print(userQ)
-if userQ ==userCar:
+# #users question
+# userCar=input("choose a car of your choice")
+# userQ=input("create a question for your car")
+# print(userQ)
+# if userQ ==userCar:
 #randomize the questions
-    random=["guess","guess2","guess3","guess4","guess5", "guess6","guess7" ]
+Questions=[guess,guess2,guess3,guess4,guess5,guess6,guess7]
+guess = input(f"this car has a 8 cylinder supercharged hemi v8? (try {attempt+1}/3) ")
+print(random.choice(Questions))
 
 #q1
 car1="hellcat"
 for attempt in range(3):
-    guess = input(f"this car has a 8 cylinder supercharged hemi v8? (try {attempt+1}/3) ")
     if guess.strip()== car1:
         print("Congrats")
         break
